@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: arez-businessmen-services
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./outputs/area-businessmen-services
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
